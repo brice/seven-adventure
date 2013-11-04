@@ -86,3 +86,4 @@ Run a ruby program from a file.
 
     ruby day1.rb
 
+In day1 you will find the bonus exercise
