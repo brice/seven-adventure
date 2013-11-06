@@ -5,8 +5,10 @@ def gets_to_i
     return x.to_i
 end
 
-puts "Guess a number"
 response = rand(10)
+
+puts "Guess a number"
+
 guess = gets_to_i
 
 while guess != response

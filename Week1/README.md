@@ -87,3 +87,56 @@ Run a ruby program from a file.
     ruby day1.rb
 
 In day1 you will find the bonus exercise
+
+### Day 2 : Floating down from the sky
+
+(Around two hours to read and answer to the Find Part)
+
+Define a function in ruby is quite easy, and every function return something.
+
+    >> def tell_the_truth
+    >>     true
+    >> end
+
+The array's and hashes' behavior is pretty the same as in PHP evn if syntax differs. Notable differences like Range System or the possibility to get element from the end.
+
+Ruby has very powerful systl of code block
+
+    >> 3.times {puts "display it"}
+
+Every class, except Object Class, inherit of one parent called a superclass. It's possible to write mixin to extends class behavior.
+
+Some mixin are available directly in Ruby like enumerable or comparable
+
+### Day 2 : Self Study
+
+Find out how to acess files with and without code blocks. What is the benefit of the code block?
+
+    >> File.open('my_file.txt', 'w+');
+    >> file.puts 'This will be in my file';
+    >> file.close
+
+    >> File.open('my_other_file', 'w+') { |file|
+        file.puts 'This will be in my file too'
+    }
+
+* I think the benefits is more easy to write and read.
+
+How would you translate a hash to an Array?
+
+    >> hash = {:string => 'test', :array => [1,2,3]}
+    >> hash.to_a
+
+Can you translate arrays to hashes ?
+
+    >> res = Hash[hash]
+
+Can you iterate through an hash ?
+
+    res.each {|key,value|
+        puts "#{key} => #{value}"
+    }
+
+You can use ruby as stacks. What other common data structures do arrays support?
+
+    * queue, linked list, stack or set
