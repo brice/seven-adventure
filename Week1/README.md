@@ -144,6 +144,13 @@ You can use ruby as stacks. What other common data structures do arrays support?
 
 ### Day 3 : Serious change
 
+Remember : A class is a module
+
+How to define a superclass
+
+   >> class MyString < String
+   >> end
+
 OpenClass : To extends a class and create new function we just need to define function this way.
 
     >> class NilClass
@@ -156,3 +163,6 @@ OpenClass : To extends a class and create new function we just need to define fu
     => true
 
 The method_missing will be ovverride to create generic function but it needs to used it wisely.
+
+But there is more to do, every class could be extended dinamycally with metaprogramming techniques (exemple : Builder and ActiveRecord framework)
+

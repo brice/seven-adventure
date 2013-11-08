@@ -37,3 +37,5 @@ m = RubyCsv.new
 puts m.headers.inspect
 puts m.csv_contents.inspect
 
+
+p RubyCsv.superclass
