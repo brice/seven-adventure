@@ -140,3 +140,19 @@ Can you iterate through an hash ?
 You can use ruby as stacks. What other common data structures do arrays support?
 
     * queue, linked list, stack or set
+
+
+### Day 3 : Serious change
+
+OpenClass : To extends a class and create new function we just need to define function this way.
+
+    >> class NilClass
+    >>    def empty?
+    >>        true
+    >>    end
+    >> end
+    => nil
+    >> nil.empty?
+    => true
+
+The method_missing will be ovverride to create generic function but it needs to used it wisely.
