@@ -2,6 +2,8 @@
 
 Let's start with the first Language : Ruby
 
+For information, i found a interesting taht wrote about this book : http://nickknowlson.com/projects/seven-languages-in-seven-weeks/
+
 ### Day 1 : Finding a nanny
 
 (Around one hour to read an make the exercices)
@@ -151,7 +153,7 @@ How to define a superclass
    >> class MyString < String
    >> end
 
-OpenClass : To extends a class and create new function we just need to define function this way.
+OpenClass : To extends a class and create new function we just need to define function this way. In ruby you have the power to modify and extends any class at runtime.
 
     >> class NilClass
     >>    def empty?
@@ -166,3 +168,8 @@ The method_missing will be ovverride to create generic function but it needs to 
 
 But there is more to do, every class could be extended dinamycally with metaprogramming techniques (exemple : Builder and ActiveRecord framework)
 
+### Day 3 : Self study
+
+Modify the CSV application to support an each method to return a CsvRow object. Uset method_missing on that CsvRow to return the valie for the column of a given heading.
+
+See acts_as_csv_module_row.rb
