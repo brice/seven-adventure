@@ -75,7 +75,29 @@ Execute the code in a slot give its name
     Car macro("drive")
 
 
+### Day 2 : The sausage King
 
+Rework of day 1
 
+Is 0 *true* or *false*? What about the empty string? Is nil *true* or *false*?
 
+    # if (condition, true code, false code)
+    > if (0, "true", "false")
+    ==> true
+    > if ("", "true", "false")
+    ==> true
+    > if (nil, "true", "false")
+    ==> false
 
+Io is a very light language that allows lof of extension and bluff. You can define your own operators.
+
+In Io everytghing is a message and has three components : the *sender*, the *target* and the arguments. Thats why you have things like this :
+
+    # stringSender targetFunction
+    > "Message" println
+
+The book give some exemple that explains concept of target, sender and argument.
+
+Io gives se of methods to understand whet's goin on in the arguments. In the nutshell, every object has a prototype and those prototype that have slots. As simple as that!
+
+### Day 2 : Self study
