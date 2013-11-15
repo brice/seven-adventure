@@ -109,3 +109,39 @@ In day2_fibonnaci.io the problem is solved by recursion.
 In day2_fibonnaci_loop.io the problem is solved with loops
 
 2. How would you change / to return 0 if the denominator is 0.
+
+In fact if you try this
+
+    Number / := method(denum,if (denum == 0, 0, self / denum))
+
+The function will work for 0 but other division will run in an infinite loop.
+
+    > 1/0
+    ==> 1/0
+    > 1/2
+    ...
+
+The trick is to copy */* in a new function and use this one
+
+    >  Number prevDiv := Number getSlot("/")
+    ==> Number_/()
+    > Number / := method(denum,if (denum == 0, 0, self prevDiv(denum)))
+    ==> Number / := method(denum,
+        if (denum == 0, 0, self prevDiv(denum))
+    )
+    > 1 / 2
+    0.5
+    > 1 / 0
+    0
+
+For the fun i tried this and it work the same.
+
+    > Number \ := Number getSlot("/")
+    ==> Number_/()
+    > Number / := method(denum,if (denum == 0, 0, self \(denum)))
+    ==> method(denum,
+        if(denum == 0, 0, self \(denum))
+    )
+
+3. Write a programm to add up all of the numbers in a two dimensional array.
+
