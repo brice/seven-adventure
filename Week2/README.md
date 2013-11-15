@@ -104,9 +104,8 @@ Io gives se of methods to understand whet's goin on in the arguments. In the nut
 
 1. Write a program to find the nth Fibonna ci number
 
-In day2_fibonnaci.io the problem is solved by recursion.
-
-In day2_fibonnaci_loop.io the problem is solved with loops
+- In day2_fibonnaci.io the problem is solved by recursion.
+- In day2_fibonnaci_loop.io the problem is solved with loops
 
 2. How would you change / to return 0 if the denominator is 0.
 
@@ -144,4 +143,12 @@ For the fun i tried this and it work the same.
     )
 
 3. Write a programm to add up all of the numbers in a two dimensional array.
+
+- See day2_table_sum
+
+4. Add a slot calle myAverage to a list that computes the average of all numbers in a list.
+
+- See day2_myaverage.io
+
+5. Write a prototype fpr a two-dimensional list
 
