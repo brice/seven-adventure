@@ -101,3 +101,11 @@ The book give some exemple that explains concept of target, sender and argument.
 Io gives se of methods to understand whet's goin on in the arguments. In the nutshell, every object has a prototype and those prototype that have slots. As simple as that!
 
 ### Day 2 : Self study
+
+1. Write a program to find the nth Fibonna ci number
+
+In day2_fibonnaci.io the problem is solved by recursion.
+
+In day2_fibonnaci_loop.io the problem is solved with loops
+
+2. How would you change / to return 0 if the denominator is 0.
