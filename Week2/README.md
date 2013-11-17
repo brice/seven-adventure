@@ -150,5 +150,14 @@ For the fun i tried this and it work the same.
 
 - See day2_myaverage.io
 
-5. Write a prototype fpr a two-dimensional list
+5. Write a prototype fpr a two-dimensional list, a dim, set and get function.
 
+- see day2_matrix.io
+
+6. Bonus : Write a transpose method so that new_matrix *get(x,y) == matrix get(x,y)** on the original list.
+
+- Not done yet
+
+7. Write the matrix to a file and read a matric from a file
+
+- see day2_matrix_file.io
