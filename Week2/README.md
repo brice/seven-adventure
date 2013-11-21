@@ -168,3 +168,14 @@ The chapter begins with an exemple on how io language could help in the area of 
 
 The author also describe the power of forward message to replace ruby's method missing. It gives an exemple of XML builder.
 
+The last part of this chapter describe IO's concurrencey libraries.
+### Day 3 : Self study
+
+1 Enhance the XML program to add spaceces to show the indentation structure
+
+- See day3_1_xml.io. I used global value to handle tabulation.
+
+2 Create a list syntax that users brackets
+
+
+3 Enhance the XML program to handle attributes. Exemple book({"author": "Tate"}) would print <book author="Tate">
