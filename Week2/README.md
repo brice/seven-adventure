@@ -161,3 +161,10 @@ For the fun i tried this and it work the same.
 7. Write the matrix to a file and read a matric from a file
 
 - see day2_matrix_file.io
+
+### Day 3: The Parade and Other Strange Places
+
+The chapter begins with an exemple on how io language could help in the area of DSLs. The curlyBrackets and squareBrackets allow to execute function when [] and {} are interpreted.
+
+The author also describe the power of forward message to replace ruby's method missing. It gives an exemple of XML builder.
+
