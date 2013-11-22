@@ -177,5 +177,7 @@ The last part of this chapter describe IO's concurrencey libraries.
 
 2 Create a list syntax that users brackets
 
+- See day3_2_xml.io. I used curlyBrackets and squreBrackets
+
 
 3 Enhance the XML program to handle attributes. Exemple book({"author": "Tate"}) would print <book author="Tate">
