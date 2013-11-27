@@ -54,5 +54,6 @@ Find all musicians who play the guitar
     musician(Who, 'Guitar').
 
 
-# Search musician that plays Guitar.
-# musician(Who, 'Guitart').
+### Day 2: Fifteen minutes to Wapner
+
+In this day we discover recursion, list tuples and maths.
