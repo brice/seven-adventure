@@ -106,3 +106,14 @@ We also saw how to use rules in both directions
     Two = []
 
     no
+
+### Day 2 : Self Study
+
+Find some implementations of a Fibonacci series an factorials. How do they work?
+
+- See  naive_fib. and fib_iter.pl and read this article (in french) : http://jfoutelet.developpez.com/articles/fibonacci/?page=page_1
+
+A real world community using Prolog. What problems are they solving with it today?
+
+- http://ti.arc.nasa.gov/tech/cas/user-centered-technologies/clarissa/
+- http://programmers.stackexchange.com/questions/51112/is-prolog-professionally-useful
