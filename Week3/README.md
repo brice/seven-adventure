@@ -56,4 +56,53 @@ Find all musicians who play the guitar
 
 ### Day 2: Fifteen minutes to Wapner
 
-In this day we discover recursion, list tuples and maths.
+In this day we discover recursion, variable unification, list tuples and maths. See *list_math.pl* for code example.
+
+We also saw how to use rules in both directions
+
+    | ? - append([oil], [water], What).
+
+    What = [oil,water]
+
+    yes
+    | ?- append([oil], [water], List).
+
+    List = [oil,water]
+
+    yes
+    | ?- append([oil], Water, [oil, water]).
+
+    Water = [water]
+
+    yes
+    | ?- append([oil], Water, [oil]).
+
+    Water = []
+
+    yes
+    | ?- append([oil], Water, [oil, oil]).
+
+    Water = [oil]
+
+    yes
+    | ?- append([oil], Water, [toast, oil]).
+
+    no
+    | ?- append([oil], Water, [oil, olive]).
+
+    Water = [olive]
+
+    yes
+
+    | ?- append(One, Two, [oil, olive]).
+
+    One = []
+    Two = [oil,olive] ? a
+
+    One = [oil]
+    Two = [olive]
+
+    One = [oil,olive]
+    Two = []
+
+    no
