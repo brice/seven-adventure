@@ -127,4 +127,6 @@ Reverse the elements of a list
 
 - See revert.pl
 
-Fin yhe smallest element of a list.
+Find the smallest element of a list.
+
+- See min.pl for various implementation
