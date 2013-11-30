@@ -109,6 +109,9 @@ We also saw how to use rules in both directions
 
 ### Day 2 : Self Study
 
+
+#### Find
+
 Find some implementations of a Fibonacci series an factorials. How do they work?
 
 - See  naive_fib. and fib_iter.pl and read this article (in french) : http://jfoutelet.developpez.com/articles/fibonacci/?page=page_1
@@ -117,3 +120,11 @@ A real world community using Prolog. What problems are they solving with it toda
 
 - http://ti.arc.nasa.gov/tech/cas/user-centered-technologies/clarissa/
 - http://programmers.stackexchange.com/questions/51112/is-prolog-professionally-useful
+
+#### Do :
+
+Reverse the elements of a list
+
+- See revert.pl
+
+Fin yhe smallest element of a list.
