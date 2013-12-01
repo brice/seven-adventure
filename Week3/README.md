@@ -1,6 +1,6 @@
 ## Introduction
 
-For the first week end (begin november the 25th) i start prolog, a language that i already learned before.
+For the third week (started on november 25) i start prolog, a language that i already learned before.
 
 ### Day 1 : An excellent driver
 
@@ -130,3 +130,7 @@ Reverse the elements of a list
 Find the smallest element of a list.
 
 - See min.pl for various implementation
+
+Sort a list
+
+- See sort.pl
