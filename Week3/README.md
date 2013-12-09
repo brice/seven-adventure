@@ -134,3 +134,6 @@ Find the smallest element of a list.
 Sort a list
 
 - See sort.pl
+
+### Day 3 : Blowing up Vegas
+
