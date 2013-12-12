@@ -11,7 +11,19 @@ Like all weeks, the first day define langage paradigm :
 * Inheritance (see employee.scala)
 * Traits
 
+### Day 1 : Self study
 
+#### Find
 
+The scala API
 
+* http://www.scala-lang.org/api/current/#package
+
+A comparison of java and scala
+
+* http://www.infoq.com/fr/articles/java-8-vs-scala
+
+A discussion of val versus var
+
+* http://stackoverflow.com/questions/1791408/what-is-the-difference-between-a-var-and-val-definition-in-scala So i think val is a class constant
 
