@@ -27,3 +27,8 @@ A discussion of val versus var
 
 * http://stackoverflow.com/questions/1791408/what-is-the-difference-between-a-var-and-val-definition-in-scala So i think val is a class constant
 
+### Do
+
+* Write a Tic-Tac-Toe game
+
+See day1/tictactoe.scala
