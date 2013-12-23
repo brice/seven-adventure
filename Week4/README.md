@@ -9,7 +9,9 @@ Like all weeks, the first day define langage paradigm :
 * Loops
 * Creating class with polymorphic instanciation (see constructor.scala)
 * Inheritance (see employee.scala)
-* Traits
+* Traits (see nice.scala)
+
+In this day we saw the object-oriented aspect of scala. Syntax is not so hard to understand from my PHP point of view but it's more strict than i am use to.
 
 ### Day 1 : Self study
 
@@ -32,3 +34,35 @@ A discussion of val versus var
 * Write a Tic-Tac-Toe game
 
 See day1/tictactoe.scala
+
+### Day 2 : Clipping Bushes and Other New Tricks
+
+In this second day, we start to learn the functional aspect of scala. For exemple we write this simple function and use it in console :
+
+    scala> def double(x:Int):Int = x * 2
+    double: (x: Int)Int
+
+    scala> double(2)
+    res0: Int = 4
+
+In fact i already saw how to define function while working on my tic tac toe program, but they look more like the second form (don't forget that = is mandatory) :
+
+    scala> def double(x:Int):Int = {
+     | x*2
+     | }
+    double: (x: Int)Int
+
+The variable definition is more strict than in PHP so this exemple will fail :
+
+    scala> double(2.3)
+    <console>:9: error: type mismatch;
+    found   : Double(2.3)
+    required: Int
+              double(2.3)
+                     ^
+
+In day one we have to find a discussion of var versus val. In the second day, the author explain us the difference: var is mutable and val is immutable. Its seems important for the concurrency features (i hope to see why).
+
+We also took a deeper look into collections : Lists, Set (very sweet stuff) or Maps.
+
+Unlike other languages and chapter, the second day made me rethink opf my code so i rewrited my Tic-tac-toe game to apply what i discovered this day. See ttt2.scala to see the new game.
