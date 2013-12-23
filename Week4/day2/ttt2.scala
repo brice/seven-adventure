@@ -67,21 +67,12 @@ class Board() {
      * Test a sequence of three item
      */
     def testSeq(Seq: Array[String]) = {
-        var base = Seq(0)
-        var response = true
+        val base = Seq.head
         if (base == " ") {
             false
         } else {
-            Seq.foreach { item =>
-                if (item != base) {
-                    response = false
-                }
-            }
-            if (response == true) {
-                true
-            } else {
-                false
-            }
+            val nbSameItem = Seq.count(item => item == base)
+            nbSameItem == 3
         }
     }
 
@@ -92,10 +83,8 @@ class Board() {
         var response = true
         values.foreach { line =>
             // I'm sure there's a better solution
-            line.foreach{ item =>
-                if (item == " ") {
-                    response = false
-                }
+            if (line.count (item => item == " ") > 0) {
+                response = false
             }
         }
         response
