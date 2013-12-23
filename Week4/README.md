@@ -27,7 +27,7 @@ A comparison of java and scala
 
 A discussion of val versus var
 
-* http://stackoverflow.com/questions/1791408/what-is-the-difference-between-a-var-and-val-definition-in-scala So i think val is a class constant
+* http://stackoverflow.com/questions/1791408/what-is-the-difference-between-a-var-and-val-definition-in-scala So i think val is a like a constant (in fact it's an immutable variable)
 
 ### Do
 
@@ -61,8 +61,19 @@ The variable definition is more strict than in PHP so this exemple will fail :
               double(2.3)
                      ^
 
-In day one we have to find a discussion of var versus val. In the second day, the author explain us the difference: var is mutable and val is immutable. Its seems important for the concurrency features (i hope to see why).
+In day one we have to find a discussion of var versus val. In the second day, the author explain us the difference: var is mutable and val is immutable. You can't redeclare a val. Its seems important for the concurrency features (i hope to see why).
 
-We also took a deeper look into collections : Lists, Set (very sweet stuff) or Maps.
+We also took a deeper look into collections : Lists, Set (very sweet stuff) or Maps. Then we learn what are Any and Nothing. Finally we deals with collection's functions and introduce the concept of *higher-order Functions* (it reminds me some javascript stuff).
+
+Funny exemple :
+    scala> val hobbits = Map("frodo" -> "hobbit",
+     | "samwise" -> "hobbit",
+     | "smaug" -> "dragon")
+     hobbits: scala.collection.immutable.Map[java.lang.String,java.lang.String] = Map(frodo -> hobbit, samwise -> hobbit, smaug -> dragon)
+
+     scala> hobbits.foreach(hobbit => if (hobbit._2 != "hobbit") {println(hobbit)})
+     (smaug,dragon)
+
 
 Unlike other languages and chapter, the second day made me rethink opf my code so i rewrited my Tic-tac-toe game to apply what i discovered this day. See ttt2.scala to see the new game.
+
