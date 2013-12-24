@@ -80,6 +80,9 @@ Unlike other languages and chapter, the second day made me rethink opf my code s
 
 A discussion on how to use Scala files
 
+* http://www.tutorialspoint.com/scala/scala_file_io.htm
+* See scalaFile.scala for an exemple
+
 What makes a closure different from a code block
 
 #### Do

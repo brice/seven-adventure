@@ -1,10 +1,4 @@
-/**
- * Simpler noard
- */
-class MapBoard() {
 
-
-}
 class Board() {
     var values = Array(Array(" "," "," "),Array(" "," "," "),Array(" "," "," "))
 

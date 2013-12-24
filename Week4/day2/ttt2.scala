@@ -1,3 +1,17 @@
+/**
+ * Simpler board
+ */
+class MapBoard() {
+
+    def print() {}
+
+    def set(Position:String, V: String) = {}
+
+    def test() = {}
+
+    def full() = {}
+}
+
 class Board() {
     val values = Array(Array(" "," "," "),Array(" "," "," "),Array(" "," "," "))
 
