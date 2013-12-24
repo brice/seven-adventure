@@ -74,6 +74,20 @@ Funny exemple :
      scala> hobbits.foreach(hobbit => if (hobbit._2 != "hobbit") {println(hobbit)})
      (smaug,dragon)
 
-
 Unlike other languages and chapter, the second day made me rethink opf my code so i rewrited my Tic-tac-toe game to apply what i discovered this day. See ttt2.scala to see the new game.
 
+#### Find
+
+A discussion on how to use Scala files
+
+What makes a closure different from a code block
+
+#### Do
+
+Use foldLeft to compute the total size of a list of strings
+
+* See stringlist.scala
+
+Write a Censor trait with a method that will replace the curse words *Shoot* and *Darn* with *Pucky* and *Beans* alternatives. Use a map to store the curse words and their alternatives.
+
+Load the curse words and alternatives from a file

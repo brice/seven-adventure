@@ -1,3 +1,10 @@
+/**
+ * Simpler noard
+ */
+class MapBoard() {
+
+
+}
 class Board() {
     var values = Array(Array(" "," "," "),Array(" "," "," "),Array(" "," "," "))
 
@@ -193,4 +200,3 @@ class TicTacToe() {
 
 val game = new TicTacToe()
 game.start()
-
