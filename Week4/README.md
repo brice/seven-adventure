@@ -82,8 +82,11 @@ A discussion on how to use Scala files
 
 * http://www.tutorialspoint.com/scala/scala_file_io.htm
 * See scalaFile.scala for an exemple
+* And completely different but kinda fun a discussion about scala compilation : http://www.scala-lang.org/old/node/166
 
 What makes a closure different from a code block
+
+* A closure is a code block that incorporated free variable that come from outside its own scope. Find here : http://www.javacodegeeks.com/2011/11/scala-tutorial-code-blocks-coding-style.html
 
 #### Do
 

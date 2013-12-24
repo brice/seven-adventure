@@ -1,4 +1,3 @@
-
 class Board() {
     var values = Array(Array(" "," "," "),Array(" "," "," "),Array(" "," "," "))
 
