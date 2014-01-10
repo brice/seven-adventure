@@ -99,3 +99,5 @@ Write a Censor trait with a method that will replace the curse words *Shoot* and
 * See censor.scala
 
 Load the curse words and alternatives from a file
+
+* See censorfile.scala

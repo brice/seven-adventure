@@ -2,18 +2,22 @@ trait Censor {
     val ReplaceMap = Map("Shoot" -> "Pucky",
     "Darn" -> "Beans")
 
-    def replace(Text:String) {
+    def replace(Text:String) : String = {
         var response = Text
+
         ReplaceMap.foreach{item =>
              response = response.replaceAll(item._1, item._2)
         }
-        println(response)
+
+        return response
     }
 }
 
-class Text(val text:String) extends Censor {
-    replace(text)
-}
+class PoliteText extends Censor
 
-new Text("Shoot Darn and Leave!")
+var politer = new PoliteText()
 
+val text = "Shoot Darn and Leave!"
+
+println(text)
+println(politer.replace(text))
