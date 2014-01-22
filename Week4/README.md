@@ -110,4 +110,4 @@ This final day explain some complex stuff that we could do with a simple progra 
 * Pattern matching (see day3/chores.scala) with some embellishments (see day3/factorial.scala)
 * Regular expression (exemple val ref = "the".r)
 * Parsing XML with matching (see movies.scala, i tried to improve the book exemple)
-* And concurrency
+* And concurrency...
