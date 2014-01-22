@@ -101,3 +101,13 @@ Write a Censor trait with a method that will replace the curse words *Shoot* and
 Load the curse words and alternatives from a file
 
 * See censorfile.scala
+
+### Day 3 : Cutting through the Fluff
+
+This final day explain some complex stuff that we could do with a simple progra in scala like :
+
+* Parsing XML
+* Pattern matching (see day3/chores.scala) with some embellishments (see day3/factorial.scala)
+* Regular expression (exemple val ref = "the".r)
+* Parsing XML with matching (see movies.scala, i tried to improve the book exemple)
+* And concurrency
