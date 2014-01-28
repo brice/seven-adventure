@@ -19,7 +19,8 @@ def timeMethod(method: () => Unit) = {
 
 def getPageSizeSequentially() = {
     for (url <- urls) {
-        println ("Size for " + url + ":" + PageLoader.getPageSize(url))
+        println(url);
+        // println ("Size for " + url + ":" + PageLoader.getPageSize(url))
     }
 }
 
@@ -27,7 +28,7 @@ def getPageSizeConcurrently() = {
     val caller = self
 
     for (url <- urls) {
-        actor { caller ! (url, PageLoader.getPageSize(url)) }
+        actor { caller ! (url, 1) }
     }
 
     for ( i <- 1 to urls.size) {
