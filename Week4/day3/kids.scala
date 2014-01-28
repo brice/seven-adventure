@@ -28,5 +28,5 @@ println("Ready to poke and feed")
 bart ! Poke
 lisa ! Poke
 
-bart ! Feed
-lisa ! Feed
+bart ! feed
+lisa ! feed
