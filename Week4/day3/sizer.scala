@@ -3,10 +3,10 @@ import scala.actors._
 import Actor._
 
 object PageLoader {
-    def getPageSize(url : String) = Source.fromURL(url)(io.Codec("UTF-8")).mkString
+    def getPageSize(url : String) = Source.fromURL(url).mkString.length
 }
 
-var urls = List("http://www.google.com", "http://www.linkedin.com/")
+var urls = List("http://gmail.google.com", "https://www.linkedin.com/", "http://www.twitter.com/")
 
 def timeMethod(method: () => Unit) = {
     val start = System.nanoTime
@@ -17,8 +17,7 @@ def timeMethod(method: () => Unit) = {
 
 def getPageSizeSequentially() = {
     for (url <- urls) {
-        println(url);
-        // println ("Size for " + url + ":" + PageLoader.getPageSize(url))
+        println ("Size for " + url + ":" + PageLoader.getPageSize(url))
     }
 }
 
