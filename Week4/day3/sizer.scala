@@ -3,12 +3,10 @@ import scala.actors._
 import Actor._
 
 object PageLoader {
-    def getPageSize(url : String) = Source.fromURL(url).mkString.length
+    def getPageSize(url : String) = Source.fromURL(url)(io.Codec("UTF-8")).mkString
 }
 
-var urls = List("http://www.amazon.com",
-                "http://www.twitter.com",
-                "http://www.google.com")
+var urls = List("http://www.google.com", "http://www.linkedin.com/")
 
 def timeMethod(method: () => Unit) = {
     val start = System.nanoTime
@@ -28,7 +26,7 @@ def getPageSizeConcurrently() = {
     val caller = self
 
     for (url <- urls) {
-        actor { caller ! (url, 1) }
+        actor { caller ! (url, PageLoader.getPageSize(url)) }
     }
 
     for ( i <- 1 to urls.size) {
@@ -42,5 +40,5 @@ def getPageSizeConcurrently() = {
 println("Sequential run :")
 timeMethod { getPageSizeSequentially }
 
-//println("Concurrent run :")
-//timeMethod {getPageSizeConcurrently}
+println("Concurrent run :")
+timeMethod {getPageSizeConcurrently}

@@ -110,4 +110,14 @@ This final day explain some complex stuff that we could do with a simple progra 
 * Pattern matching (see day3/chores.scala) with some embellishments (see day3/factorial.scala)
 * Regular expression (exemple val ref = "the".r)
 * Parsing XML with matching (see movies.scala, i tried to improve the book exemple)
-* And concurrency...
+* And concurrency... (see kids.scala and sizer.scala)
+
+#### Find
+
+For the sizer program, what would happen if you did not create a new actor for each link you wanted to follow? What would happe to the performance of the application?
+
+#### Do
+
+Take the sizer application and add a message to count the number of links on the page.
+
+Bonus problem : Make the sizer follow the links on a given page and load them as well. For exemple, a sizer for google.com would compute the size for google and all of the pages it links to.
