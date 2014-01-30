@@ -6,7 +6,7 @@ object PageLoader {
     def getPageSize(url : String) = Source.fromURL(url).mkString.length
 }
 
-var urls = List("http://gmail.google.com", "https://www.linkedin.com/", "http://www.twitter.com/")
+var urls = List("https://www.twitter.com", "https://www.linkedin.com/", "http://gmail.google.com")
 
 def timeMethod(method: () => Unit) = {
     val start = System.nanoTime

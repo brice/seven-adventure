@@ -116,6 +116,35 @@ This final day explain some complex stuff that we could do with a simple progra 
 
 For the sizer program, what would happen if you did not create a new actor for each link you wanted to follow? What would happe to the performance of the application?
 
+* Call will be made in order and we have to wait for the first return before treat the other. The performance will be pretty the same but the result will be displayed when the slowest link will respond.
+
+Return with Actor :
+
+    Sequential run :
+    Size for https://www.twitter.com:52367
+    Size for https://www.linkedin.com/:61024
+    Size for http://gmail.google.com:234
+    Method took 3.094117899 seconds
+    Concurrent run :
+    Size for http://gmail.google.com:234
+    Size for https://www.linkedin.com/:59496
+    Size for https://www.twitter.com:52360
+    Method took 0.918761177 seconds
+
+Return without Actor :
+
+    Sequential run :
+    Size for https://www.twitter.com:52367
+    Size for https://www.linkedin.com/:59517
+    Size for http://gmail.google.com:234
+    Method took 3.266605131 seconds
+    Concurrent run :
+    Size for https://www.twitter.com:52360
+    Size for https://www.linkedin.com/:59520
+    Size for http://gmail.google.com:234
+    Method took 1.186105515 seconds
+
+
 #### Do
 
 Take the sizer application and add a message to count the number of links on the page.
