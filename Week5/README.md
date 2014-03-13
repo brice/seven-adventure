@@ -6,7 +6,7 @@
 
 Again the book we learn, on first day, the langage's basics.
 
-* Comments, variable and expressions. Variable are immutable.
+* Comments, variable and expressions. Variable are immutable and erlang is dynamically typed.
 * Atoms, lists and tuples. Variable begins with an uppercase, symbols or atoms begins with a lowercase character. Atoms are arbitrary name that we use to symbolize world things. List and tuples are similar to prolog.
 * Pattern matching that allow to extract values from a tuple. Exemple :
 
@@ -57,3 +57,5 @@ And finally the = symbol is not an assigment but a pattern match. (Faux-ami like
 
 * Bit Matching. Erlang allow to handle data a byt leval quite easily in order to do low level tasks.
 * Functions. See day1/basic.erl for a basic function.
+
+### Day 1 : Self study
