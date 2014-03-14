@@ -31,9 +31,9 @@ A discussion of val versus var
 
 ### Do
 
-* Write a Tic-Tac-Toe game
+Write a Tic-Tac-Toe game
 
-See day1/tictactoe.scala
+* See day1/tictactoe.scala
 
 ### Day 2 : Clipping Bushes and Other New Tricks
 
