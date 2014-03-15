@@ -80,11 +80,15 @@ The documentation for Erlang's OTP library
 Write a function that uses recursion to return the number of words in a string.
 
 * I find some information about [Erlang's string functions](http://www.erlang.org/doc/man/string.html) and specially the sting:tokens function.
-* My first attempt is written in basic_count.erl but it only take space separator.
-* I write another function to take spaces, tab, return and comma in account. See evolved_count. My code is inspired by [this gist](https://gist.github.com/fwangel/1281731)
+* My first attempt is written in day1/basic_count.erl but it only take space separator.
+* I write another function to take spaces, tab, return and comma in account. See day1/evolved_count.erl. My code is inspired by [this gist](https://gist.github.com/fwangel/1281731)
 
 Write a function that uses recursion to count to ten
 
 * The main difficulty of this exercice is the using of fwrite. See basic_count:count_to_ten in basic_count.erl
 
 Write a function that uses matching to selectively print *"success"* or *"error: message"* givent input of the form *{error, Message}* or *success*
+
+* This function is very easy to write with pattern matching. See day1/messages.erl to read it.
+
+### Day 2 : Changing forms
