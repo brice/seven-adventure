@@ -92,3 +92,10 @@ Write a function that uses matching to selectively print *"success"* or *"error:
 * This function is very easy to write with pattern matching. See day1/messages.erl to read it.
 
 ### Day 2 : Changing forms
+
+In this day we see other syntax of the language like
+* Case condition
+* If condition
+* How to create Anonymous Function (with fun i like it!)
+* How to apply anonymous function to lists
+* fold function
