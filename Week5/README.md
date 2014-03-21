@@ -99,3 +99,11 @@ In this day we see other syntax of the language like
 * How to create Anonymous Function (with fun i like it!)
 * How to apply anonymous function to lists
 * fold function
+* And advanced list concepts
+
+### Day 2 : Do
+
+* Write a function that accepts a list (Exemple List = [{keyword, "value"}, {erlang, "Woooo"}, {cobol, "Boo"}].) and a keyword and return the value associated to the keyword.
+
+See [search.erl](day2/search.erl).
+
