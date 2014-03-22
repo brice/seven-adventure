@@ -28,7 +28,7 @@ Exemple :
 
 We can see in this example differences between atom (that match itself) and variable (that take values).
 
-* Pattern Matching also work with list :
+* Pattern Matching also work with list.
 
 Exemple :
 
@@ -110,3 +110,19 @@ Write a function that accepts a list (Exemple List = [{keyword, "value"}, {erlan
 * See [search.erl](day2/search.erl).
 
 Consider a list looks like *[{item, quantity, price}]*. Write a list comprehension that builds a list of *items* of the form *[{item, total_price}]*, where *total_price* is *quantity* times *price*.
+
+* First create the liste
+
+Code :
+
+     > Cart = [{"pen", 4, 0.5}, {"paper", 10, 0.25}, {"scissor", 1, 7}].
+     [{"pen",4,0.5},{"paper",10,0.25},{"scissor",1,7}]
+
+* Then create the list comprehensions
+
+Code :
+
+    > Items = [{Product, Quantity*Price} || {Product, Quantity, Price} <- Cart].
+    [{"pen",2.0},{"paper",2.5},{"scissor",7}]
+
+Bonus Problem : Write a program that reads a Tic-Tac-Toe presented as a list or a tuple of size nine. Return the winner, *cat* if nobody won, or *no_winner* if no player has won yet.
