@@ -8,8 +8,9 @@ Again the book we learn, on first day, the langage's basics.
 
 * Comments, variable and expressions. Variable are immutable and erlang is dynamically typed.
 * Atoms, lists and tuples. Variable begins with an uppercase, symbols or atoms begins with a lowercase character. Atoms are arbitrary name that we use to symbolize world things. List and tuples are similar to prolog.
-* Pattern matching that allow to extract values from a tuple. Exemple :
+* Pattern matching that allow to extract values from a tuple.
 
+Exemple :
 
     > Person = {person, {name, "Agent Smith"}, {profession, "Killing programs"}}.
     {person,{name,"Agent Smith"},
@@ -27,7 +28,9 @@ Again the book we learn, on first day, the langage's basics.
 
 We can see in this example differences between atom (that match itself) and variable (that take values).
 
-Pattern Matching also work with list :
+* Pattern Matching also work with list :
+
+Exemple :
 
     > List = [1,2,3].
     [1,2,3]
@@ -53,8 +56,7 @@ Pattern Matching also work with list :
     > Rest.
     [3]
 
-And finally the = symbol is not an assigment but a pattern match. (Faux-ami like we say in french).
-
+* And finally the = symbol is not an assigment but a pattern match. (Faux-ami like we say in french).
 * Bit Matching. Erlang allow to handle data a byt leval quite easily in order to do low level tasks.
 * Functions. See day1/basic.erl for a basic function.
 
@@ -99,11 +101,12 @@ In this day we see other syntax of the language like
 * How to create Anonymous Function (with fun i like it!)
 * How to apply anonymous function to lists
 * fold function
-* And advanced list concepts
+* And advanced list concepts like list Comprehensions
 
 ### Day 2 : Do
 
-* Write a function that accepts a list (Exemple List = [{keyword, "value"}, {erlang, "Woooo"}, {cobol, "Boo"}].) and a keyword and return the value associated to the keyword.
+Write a function that accepts a list (Exemple List = [{keyword, "value"}, {erlang, "Woooo"}, {cobol, "Boo"}].) and a keyword and return the value associated to the keyword.
 
-See [search.erl](day2/search.erl).
+* See [search.erl](day2/search.erl).
 
+Consider a list looks like *[{item, quantity, price}]*. Write a list comprehension that builds a list of *items* of the form *[{item, total_price}]*, where *total_price* is *quantity* times *price*.
