@@ -103,7 +103,9 @@ In this day we see other syntax of the language like
 * fold function
 * And advanced list concepts like list Comprehensions
 
-### Day 2 : Do
+### Day 2 : Self Study
+
+#### Do
 
 Write a function that accepts a list (Exemple List = [{keyword, "value"}, {erlang, "Woooo"}, {cobol, "Boo"}].) and a keyword and return the value associated to the keyword.
 
@@ -126,3 +128,5 @@ Code :
     [{"pen",2.0},{"paper",2.5},{"scissor",7}]
 
 Bonus Problem : Write a program that reads a Tic-Tac-Toe presented as a list or a tuple of size nine. Return the winner, *cat* if nobody won, or *no_winner* if no player has won yet.
+
+### Day 3 : Red pill
