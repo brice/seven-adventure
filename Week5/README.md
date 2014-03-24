@@ -129,4 +129,8 @@ Code :
 
 Bonus Problem : Write a program that reads a Tic-Tac-Toe presented as a list or a tuple of size nine. Return the winner, *cat* if nobody won, or *no_winner* if no player has won yet.
 
+* Todo
+
 ### Day 3 : Red pill
+
+In this The last day we see concurrency in action with Erlang and create a basic aynchronous service see [translate.erl](day3/translate.erl).
