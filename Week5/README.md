@@ -133,4 +133,5 @@ Bonus Problem : Write a program that reads a Tic-Tac-Toe presented as a list or 
 
 ### Day 3 : Red pill
 
-In this The last day we see concurrency in action with Erlang and create a basic aynchronous service see [translate.erl](day3/translate.erl).
+In this The last day we see concurrency in action with Erlang and create a basic asynchronous service (see [translate.erl](day3/translate.erl)) and a basic synchronous service (see [translate_service.erl](day3/translate_service.erl)). We also saw a monitoring process : see [roulette.erl](day3/roulette.erl), [coroner.erl](day3/coroner.erl) and [doctor.erl](day3/doctor.erl).
+

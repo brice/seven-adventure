@@ -1,7 +1,5 @@
 -module(basic_count).
--export([words/1]).
--export([count_list/1]).
--export([count_to_ten/0]).
+-export([words/1, count_list/1,count_to_ten/0]).
 
 words(String) -> count_list(string:tokens(String, " ")).
 
